@@ -1,3 +1,3 @@
 # Structured-Tensor-Regression
 
-code for paper 'High-Dimensional Tensor Regression With Oracle Properties'
+This code is used to reproducing the results in the paper:  'High-Dimensional Tensor Regression With Oracle Properties'.
