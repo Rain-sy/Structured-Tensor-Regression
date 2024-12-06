@@ -29,7 +29,7 @@ for j = 1:length(d_values)
         A_results = data.A_results;
         rmse_results = data.Rmse_results;
         %variance = sqrt(var(rmse_results)) * (2000/n)* sqrt(d/16);
-        variance = sqrt(var(rmse_results)) * 2000*d/ (n*20);
+        variance = sqrt(var(rmse_results));
         % 重新计算均值、最大值和最小值
         mean_rmse_lr(i, j) = mean(rmse_results);  % 计算均值
         max_rmse_lr(i, j) = mean(rmse_results) + variance;
