@@ -31,7 +31,7 @@ for j = 1:length(n_values)
         % 计算 RMSE
         rmse_results = data.Rmse_results;
         %variance = sqrt(var(rmse_results))*r/6;
-        variance = sqrt(var(rmse_results))*r/20;
+        variance = sqrt(var(rmse_results));
         % 重新计算均值、最大值和最小值
         mean_rmse_lr(j, i) = mean(rmse_results);  % 计算均值
         max_rmse_lr(j, i) = mean(rmse_results)+variance;    % 计算最大值
