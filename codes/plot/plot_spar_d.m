@@ -35,7 +35,7 @@ for j = 1:length(n_values)
         % for k = 1:length(A_sta)
         %     rmse_results(k) = sqrt(mean((A_sta{k}(:) - A_results{k}(:)).^2));
         % end
-        variance = sqrt(var(rmse_results))*d*d/144;%
+        variance = sqrt(var(rmse_results));
         % 重新计算均值、最大值和最小值
         mean_rmse_lr(j, i) = mean(rmse_results);  % 计算均值
         max_rmse_lr(j, i) = mean(rmse_results)+variance;    % 计算最大值
